@@ -8,5 +8,20 @@ pipeline {
                 
             }
         }
+        stage('testing maven') {
+            steps {
+                sh """mvn -version"""
+            }
+        }
+          stage('Clean package') {
+            steps {
+                sh 'mvn clean'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh 'mvn test' 
+            }
+     }
     }
 }
