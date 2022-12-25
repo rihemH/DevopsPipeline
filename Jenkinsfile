@@ -18,10 +18,5 @@ pipeline {
                 sh 'mvn clean'
             }
         }
-        stage('Test') { 
-            steps {
-                sh 'mvn test' 
-            }
-     }
     }
 }
