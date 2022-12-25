@@ -18,10 +18,5 @@ public class OperateurServiceImplTest {
 	@Autowired
 	IOperateurService op;
 	
-	@Test
-	@Order(1)
-	public void testRetrieveAllOperateurs() {
-	List<Operateur> listOperateurs = op.retrieveAllOperateurs();
-	Assertions.assertEquals(0, listOperateurs.size());
-	}
+
 }
