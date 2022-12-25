@@ -13,16 +13,17 @@ pipeline {
                 sh """mvn -version"""
             }
         }
+         stage('testing java version') {
+            steps {
+                sh """java -version"""
+            }
+        }
           stage('Clean package') {
             steps {
                 sh 'mvn clean'
             }
         }
-        stage('Maven  install') { 
-            steps {
-                sh 'mvn install' 
-            }
-     }
+        
 
     }
 }
