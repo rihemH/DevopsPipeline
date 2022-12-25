@@ -15,7 +15,7 @@ pipeline {
         }
           stage('Clean package') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'mvn clean install -U'
             }
         }
     }
