@@ -28,6 +28,11 @@ pipeline {
                 sh 'mvn test' 
             }
      }
+        stage('Deploy project for nexus') { 
+            steps {
+                sh 'mvn deploy' 
+            }
+     }
         
 
     }
