@@ -40,11 +40,7 @@ pipeline {
                     sh 'mvn package'  
             }
         }
-        stage("Nexus Deploy") {
-            steps {
-                    sh 'mvn clean package deploy'
-            }
-        }
+        
 
     }
 }
