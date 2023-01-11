@@ -1,4 +1,11 @@
 pipeline {
+    environment{
+      registry="rihem1991/tpachatprojctbackend"
+      registryCredential='rihem-dockerhub'
+      dokerImage="tpachatprojctbackend"
+      PATH = "$PATH:/usr/local/bin"
+
+ } 
     agent any
     stages {
         stage('Git Checkout') {
