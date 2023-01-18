@@ -67,7 +67,7 @@ pipeline {
       }  
        stage("DockerHub login ") {
               steps{
-                  sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u hamza1991 -p Hamzasarrajoacaatc'
+                  sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u rihemhamdi -p rihemesprit'
             }
           }
           stage('Docker-compose file') {
