@@ -4,8 +4,6 @@ pipeline {
       registryCredential='rihem-dockerhub'
       dokerImage="tpachatprojctbackend"
       PATH = "$PATH:/usr/local/bin"
-     
-
  }
     agent any
     stages {
